@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A completed analytics dashboard concept that turns business metrics into clear, scannable information.">
+<title>PULSE — Business intelligence at a glance</title>
+<style>
+:root{
+  --bg:#070914; --surface:#101426; --surface2:#151b31; --text:#f6f7fb;
+  --muted:#aeb6cc; --accent:#7c5cff; --accent2:#29c7ff; --border:#29304a;
+  --max:1120px; --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 0%,#18285a 0,#070914 42%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:10px;background:#fff;color:#000;padding:10px 14px;border-radius:8px;z-index:20}
+.skip:focus{left:10px}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:900;letter-spacing:.04em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.hero{padding:70px 0 85px}
+.eyebrow{color:#9ccfff;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:.98;margin:12px 0 22px;letter-spacing:-.05em}
+h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05}
+h3{line-height:1.2}
+.lead{font-size:1.15rem;color:var(--muted);max-width:720px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:800;margin:8px 8px 0 0;background:var(--surface)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#4e8cff);border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card p{color:var(--muted)}
+section{padding:55px 0}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badge{padding:6px 10px;border-radius:999px;background:#1a2140;color:#cfd6eb;font-size:.82rem}
+footer{padding:35px 0 55px;color:var(--muted);border-top:1px solid var(--border);margin-top:30px}
+.stat{font-size:2rem;font-weight:900}
+@media(max-width:800px){.grid{grid-template-columns:1fr}nav ul{gap:10px;font-size:.9rem}.hero{padding-top:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="container">
+<nav aria-label="Primary navigation">
+<a class="logo" href="#" aria-label="Justin Lee home">JUSTIN LEE</a>
+<ul><li><a href="#overview">Overview</a></li><li><a href="#details">Details</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+</header>
+<main id="main">
+<section class="hero" id="overview">
+<div class="container">
+<div class="eyebrow">Sample Project · Dashboard</div>
+<h1>PULSE — Business intelligence at a glance</h1>
+<p class="lead">A completed analytics dashboard concept that turns business metrics into clear, scannable information.</p>
+<a class="btn primary" href="#details">Explore project</a>
+<a class="btn" href="#contact">Start a project</a>
+</div>
+</section>
+<section aria-labelledby="snapshot">
+<div class="container">
+<h2 id="snapshot">Project snapshot</h2>
+<div class="grid"><div class="card"><div class="stat">$84.2K</div><div>Revenue</div></div>
+<div class="card"><div class="stat">7.8%</div><div>Conversion</div></div>
+<div class="card"><div class="stat">3,842</div><div>Customers</div></div></div>
+</div>
+</section>
+<div id="details"><section aria-labelledby="pulse-dashboard-0"><div class="container"><h2 id="pulse-dashboard-0">See what matters</h2><p class="lead">PULSE presents revenue, customers, conversion, and activity in a hierarchy that helps users find important information quickly.</p></div></section>
+<section aria-labelledby="pulse-dashboard-1"><div class="container"><h2 id="pulse-dashboard-1">Built for decisions</h2><p class="lead">The dashboard combines summary metrics with recent activity and trend indicators without overwhelming the user.</p></div></section>
+<section aria-labelledby="pulse-dashboard-2"><div class="container"><h2 id="pulse-dashboard-2">Accessible by design</h2><p class="lead">Tables and labels remain meaningful without color alone, controls are keyboard accessible, and reduced-motion preferences are respected.</p></div></section></div>
+<section id="contact" aria-labelledby="contact-title">
+<div class="container card">
+<h2 id="contact-title">Interested in something similar?</h2>
+<p class="lead">This is a portfolio sample created for Justin Lee. The interface is fully responsive and designed with accessibility in mind.</p>
+<a class="btn primary" href="mailto:hello@example.com?subject=Project%20Inquiry">Contact Justin</a>
+</div>
+</section>
+</main>
+<footer><div class="container">© 2026 Justin Lee · Sample project</div></footer>
+</body>
+</html>
